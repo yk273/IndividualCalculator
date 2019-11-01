@@ -1,31 +1,31 @@
 def addition(num1, num2):
-    sol = num1 + num2
-    return sol
+    solution = num1 + num2
+    return solution
 
 
 def subtraction(num1, num2):
-    sol = num2 - num1
-    return sol
+    solution = num2 - num1
+    return solution
 
 
 def multiplication(num1, num2):
-    sol = num1 * num2
-    return sol
+    solution = num1 * num2
+    return solution
 
 
 def division(num1, num2):
-    sol = num1 / num2
-    return sol
+    solution = num1 / num2
+    return solution
 
 
 def square(num1):
-    sol = num1 ** 2
-    return sol
+    solution = num1 ** 2
+    return solution
 
 
 def square_root(num1):
-    sol = num1 ** 0.5
-    return sol
+    solution = num1 ** 0.5
+    return solution
 
 
 class Calculate:

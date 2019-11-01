@@ -1,5 +1,6 @@
 import unittest
 from src.Calculator import Calculate
+from csvReader import CSVReader
 
 
 class MyTestCase(unittest.TestCase):
@@ -12,8 +13,10 @@ class MyTestCase(unittest.TestCase):
 
 # addition
     def test_addition(self):
-        self.assertEqual(self.calculator.add(1, 1), 2)
-        self.assertEqual(self.calculator.result, 2)
+        test_data = CSVReader('Unit_Test_Addition.csv').data
+        for row in test_data:
+            self.assertEqual(self.calculator.add(int(row['Value 1']), int(row['Value 2'])), int(row['Result']))
+            self.assertEqual(self.calculator.result, int(row['Result']))
 
 # subtraction
     def test_subtraction(self):

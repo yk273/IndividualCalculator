@@ -1,11 +1,11 @@
 import unittest
-from csvReader.CsvReader import CsvReader, class_factory
+from csvReader import CSVReader, class_factory
 
 
 class MyTestCase(unittest.TestCase):
 
     def setUp(self) -> None:
-        self.csv_reader = CsvReader('Unit_Test_Addition.csv.csv')
+        self.csv_reader = CSVReader('Unit_Test_Addition.csv.csv')
 
 
 '''

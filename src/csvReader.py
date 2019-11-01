@@ -5,7 +5,7 @@ def class_factory(class_name, dictionary):
     return type(class_name, (object,), dictionary)
 
 
-class CsvReader:
+class CSVReader:
     data = []
 
     def __init__(self, filepath):
